@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 12</title>
+</head>
+<body>
+    <script>
+        const input = prompt("Ingresá un número:");
+
+        if (input === null) {
+            alert("Operación cancelada");
+        } else if (input.trim() === "") {
+            alert("No ingresaste ningún valor");
+        } else {
+            const num = Number(input);
+
+            if (isNaN(num)) {
+            alert("No ingresaste un número válido");
+            } else if (num % 2 === 0) {
+            alert(`El número ${num} es par`);
+            } else {
+            alert(`El número ${num} es impar`);
+            }
+        }
+    </script>   
+</body>
+</html>
