@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 18</title>
+</head>
+<body>
+    <script>
+        const calcularMayor = (num1, num2) => {
+            if (isNaN(num1) || isNaN(num2)) {
+                return "No se pudo realizar la comparación";
+            }
+            
+            if (num1 > num2) {
+                return `${num1} es mayor que ${num2}`;
+            } else if (num2 > num1) {
+                return `${num2} es mayor que ${num1}`;
+            } else {
+                return "Los números son iguales";
+            }
+        };
+
+        let numero1 = parseFloat(prompt("Ingrese el primer número:"));
+        let numero2 = parseFloat(prompt("Ingrese el segundo número:"));
+
+        alert(calcularMayor(numero1, numero2));
+    </script>
+</body>
+</html>
