@@ -1,8 +1,6 @@
+import { MostrarParrafo } from "./funciones22.js";
+
 let parrafo = document.getElementById("Texto1");
 let inputTexto = document.getElementById("inputTexto");
-function MostrarParrafor (){
-    inputTexto.addEventListener("input", function() {
-        parrafo.textContent = inputTexto.value;
-    });
-}
-MostrarParrafor(inputTexto, parrafo);
+
+MostrarParrafo(inputTexto, parrafo);
